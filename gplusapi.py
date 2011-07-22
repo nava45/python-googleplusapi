@@ -56,7 +56,7 @@ class GooglePlusAPI:
             raws = ret[0][0][1][0]
             for raw in raws:
                 post = {}
-                post['id'] = raw[21].split('/')[0]
+                post['id'] = raw[21]
                 post['author'] = raw[3]
                 post['subject'] = raw[4]
                 post['source'] = raw[2]
